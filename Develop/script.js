@@ -64,42 +64,42 @@ function writePassword() {
 
 //if confirms 2 variables        
 
-            if (confirmLowercase && confirmNumber){
+            if (confirmLowercase && confirmNumber && !confirmCharacter && !confirmUppercase){
                 for (var i = 0; i < lenght; i++) {
                     var pickChoices = [Math.floor(Math.random() * alpha.concat(number).length)];
                     together += alpha.concat(number)[pickChoices];
                 }generatePassword.textContent = together
              }
 
-             if (confirmLowercase && confirmCharacter){
+             if (confirmLowercase && confirmCharacter && !confirmNumber && !confirmUppercase){
                 for (var i = 0; i < lenght; i++) {
                     var pickChoices = [Math.floor(Math.random() * alpha.concat(character).length)];
                     together += alpha.concat(character)[pickChoices];
                 }generatePassword.textContent = together
              }
 
-             if (confirmLowercase && confirmUppercase){
+             if (confirmLowercase && confirmUppercase && !confirmCharacter && !confirmNumber){
                 for (var i = 0; i < lenght; i++) {
                     var pickChoices = [Math.floor(Math.random() * alpha.concat(upper).length)];
                     together += alpha.concat(upper)[pickChoices];
                 }generatePassword.textContent = together
              }
 
-             if (confirmNumber && confirmCharacter){
+             if (confirmNumber && confirmCharacter && !confirmLowercase && !confirmUppercase){
                 for (var i = 0; i < lenght; i++) {
                     var pickChoices = [Math.floor(Math.random() * number.concat(character).length)];
                     together += number.concat(character)[pickChoices];
                 }generatePassword.textContent = together
              }
 
-             if (confirmNumber && confirmUppercase){
+             if (confirmNumber && confirmUppercase && !confirmCharacter && !confirmLowercase){
                 for (var i = 0; i < lenght; i++) {
                     var pickChoices = [Math.floor(Math.random() * number.concat(upper).length)];
                     together += number.concat(upper)[pickChoices];
                 }generatePassword.textContent = together
              }
 
-             if (confirmCharacter && confirmUppercase){
+             if (confirmCharacter && confirmUppercase && !confirmNumber && !confirmLowercase){
                 for (var i = 0; i < lenght; i++) {
                     var pickChoices = [Math.floor(Math.random() * character.concat(upper).length)];
                     together += character.concat(upper)[pickChoices];
@@ -108,28 +108,28 @@ function writePassword() {
 
 //if confirms 3 variables        
 
-            if (confirmLowercase && confirmNumber && confirmUppercase){
+            if (confirmLowercase && confirmNumber && confirmUppercase && !confirmCharacter){
                 for (var i = 0; i < lenght; i++) {
                     var pickChoices = [Math.floor(Math.random() * alpha.concat(number, upper).length)];
                     together += alpha.concat(number, upper)[pickChoices];
                 }generatePassword.textContent = together
              }
 
-             if (confirmLowercase && confirmCharacter && confirmUppercase){
+             if (confirmLowercase && confirmCharacter && confirmUppercase && !confirmNumber){
                 for (var i = 0; i < lenght; i++) {
                     var pickChoices = [Math.floor(Math.random() * alpha.concat(character, upper).length)];
                     together += alpha.concat(character, upper)[pickChoices];
                 }generatePassword.textContent = together
              }
 
-             if (confirmLowercase && confirmNumber && confirmCharacter){
+             if (confirmLowercase && confirmNumber && confirmCharacter && !confirmUppercase){
                 for (var i = 0; i < lenght; i++) {
                     var pickChoices = [Math.floor(Math.random() * alpha.concat(number, character).length)];
                     together += alpha.concat(number, character)[pickChoices];
                 }generatePassword.textContent = together
              }
 
-             if (confirmNumber && confirmCharacter && confirmUppercase){
+             if (confirmNumber && confirmCharacter && confirmUppercase && !confirmLowercase){
                 for (var i = 0; i < lenght; i++) {
                     var pickChoices = [Math.floor(Math.random() * number.concat(character, upper).length)];
                     together += number.concat(character, upper)[pickChoices];

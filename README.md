@@ -1,4 +1,3 @@
-Coding Bootcamp
 Melissa Flores
 Homework 03 JavaScript: Password Generator
 
